@@ -207,31 +207,16 @@ footer{margin-top:46px;color:var(--muted);font-size:.8rem}
 </main>
 
 <script>
-// ✏️ Cambia aquí tu usuario de GitHub
-const GITHUB_USER = "TU-USUARIO";
+const GITHUB_USER = "danielrobles92";
 
 const gh = document.getElementById("btn-gh");
-if (GITHUB_USER && GITHUB_USER !== "TU-USUARIO") {
+if (GITHUB_USER && GITHUB_USER !== "danielrobles92") {
   gh.href = "https://github.com/" + GITHUB_USER;
 } else {
   gh.style.display = "none";
 }
 document.getElementById("y").textContent = new Date().getFullYear();
 
-// Si existe renovacion.gif, se usa en lugar de la animación
-const img = document.getElementById("gif");
-img.addEventListener("load", () => {
-  img.style.display = "block";
-  document.getElementById("anim").style.display = "none";
-});
-
-// Si existe ciberseguridad.gif, se usa en lugar de la animación
-const imgC = document.getElementById("gif-cyber");
-imgC.addEventListener("load", () => {
-  imgC.style.display = "block";
-  document.getElementById("anim-cyber").style.display = "none";
-  document.querySelector(".log").style.display = "none";
-});
 </script>
 </body>
 </html>
